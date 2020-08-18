@@ -1,0 +1,269 @@
+.header {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+.ham {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.ham_line {
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background-color: aliceblue;
+}
+ 
+.ham_line1 {
+    top: 10px;
+}
+
+.ham_line2 {
+    top: 18px;
+}
+
+.ham_line3 {
+    top: 26px;
+}
+
+.global-nav {
+  position: fixed;
+  right: -300px; /* これで隠れる */
+  top: 0;
+  width: 300px; /* スマホに収まるくらい */
+  height: 100vh;
+  padding-top: 40px;
+  background-color:lightgray;
+  opacity: 0.4;
+  transition: all .6s;
+  z-index: 200;
+  overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+　
+}
+
+.global-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+.global-nav__item {
+  font-size: 100px;
+  text-align: center;
+  padding: 0 14px;
+}
+
+.global-nav__item a:hover {
+  color:black;
+}
+
+.nav-open {
+    right: 0px;
+ 
+}
+
+.home1 p {
+    position: relative;
+    font-size: 30px;
+    line-height: 10px;
+    color:aliceblue;
+    text-align: center;
+    font-family: serif;
+    top: 250px;
+}
+   
+
+.welcome {
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    left: 550px;
+    top: 160px;
+    animation: welcome 5s;
+}
+
+@keyframes welcome {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+
+.home2 {
+    position: absolute;
+    left: 365px;
+    top: 900px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(0, 0, 70, 0.8);
+    width: 50%;
+    height: 80%;
+    box-shadow: inset 15px 15px 50px rgba(255, 255, 0, 0.5);
+     animation: home2 2s infinite;
+}
+
+@keyframes home2 {
+    0% { box-shadow: 0 0 100px rgba(255, 255, 0, 1);}
+    100% { box-shadow: 0 0 50px rgba(255, 255, 0, 0.5);}
+}
+
+.home2 h1 {
+    font-size: 60px;
+    color: aliceblue;
+     text-shadow: 0 0 10px rgba(255, 255, 0, 0.0);
+}
+
+
+
+.home2 h2 {
+    color: aliceblue;
+}
+
+.home2 p {
+    color:aliceblue;
+}
+
+.home3 {
+    position: absolute;
+    left: 120px;
+    top: 1600px;
+    text-align: center;
+    
+}
+
+.home3 h1 {
+    text-align: center;
+    font-size: 60px;
+    border-bottom: solid 0.5px silver;
+}
+
+.home4 {
+    position: absolute;
+    left: 25%;
+    top: 2600px;
+    text-align: center;
+}
+
+.home4 h1 {
+    text-align: center;
+    font-size: 60px;
+    border-bottom: solid 0.5px silver;
+}
+.home4 p {
+    position: relative;
+    font-size: 100px;
+    margin: 100px;
+    display: block;
+    float: left;
+    animation: info 5s infinite;
+}
+
+
+@keyframes info {
+    0% {transform: rotateZ(360deg); color:red}
+    50% {color: blue}
+    100% {color:yellow}
+}
+
+
+
+#Record-slider {
+	width: 1200px;;
+	height: 700px;
+    overflow:hidden;
+    text-align: left;
+}
+
+#Record-slider img {
+    width:1200px
+}
+
+.Record-item {
+	width: 1200px;
+	height: 700px;
+	float: left;
+	position: relative;
+}
+
+
+
+.Record-wrapper {
+	width: 500%;
+	position: relative;
+	left: 0;
+	will-change: transform;
+	animation: slider 20s infinite;
+}
+
+@keyframes slider {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-1200px); }
+  40% { transform: translateX(-2400px); }
+  60% { transform: translateX(-3600px); }
+  80% { transform: translateX(-4800px); }
+  100% { transform: translateX(0); }
+}
+
+.firefly {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 200px;
+    top: 1000px;
+    background-color:rgba(255, 241, 0, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255,241, 0, 0.8), 0 0 8px rgba(255, 241, 0, 0.8), 0 0 15px rgba(255, 241, 0, 0.9);
+    animation: firefly 10s infinite;
+
+}
+
+@keyframes firefly {
+    0% { left: 200px; top: 1000px; width:10px; height:10px}
+    10% { left: 250px; top: 1000px; width:15px; height:15px}
+    20% { left: 250px; top: 1000px; width:20px; height:20px}
+    30% { left: 270px; top: 1020px; width:15px; height:15px}
+    40% { left: 280px; top: 1040px; width:15px; height:15px}
+    50% { left: 300px; top: 1050px; width:15px; height:15px}
+    60% { left: 350px; top: 1050px; width:15px; height:15px}
+    70% { left: 400px; top: 1060px; width:15px; height:15px}
+    80% { left: 450px; top: 1060px; width:20px; height:20px}
+    90% { left: 490px; top: 1080px; width:35px; height:35px}
+    100% { left: 490px; top: 1080px;width:30px; height:30px}
+}
+
+.firefly2 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 910px;
+    top: 1100px;
+    background-color:rgba(255, 241, 0, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255,241, 0, 0.8), 0 0 8px rgba(255, 241, 0, 0.8), 0 0 15px rgba(255, 241, 0, 0.9);
+    animation: firefly2 10s infinite;
+
+}
+
+@keyframes firefly2 {
+    0% { left: 910px; top: 1100px; width:30px; height:30px}
+    10% { left: 910px; top: 1100px; width:25px; height:25px}
+    20% { left: 910px; top: 1100px; width:20px; height:20px}
+    30% { left: 910px; top: 1100px; width:35px; height:35px}
+    40% { left: 910px; top: 1100px; width:30px; height:30px}
+    50% { left: 910px; top: 1100px; width:35px; height:35px}
+    60% { left: 910px; top: 1100px; width:30px; height:30px}
+    70% { left: 910px; top: 1100px; width:35px; height:35px}
+    80% { left: 910px; top: 1100px; width:20px; height:20px}
+    90% { left: 910px; top: 1100px; width:35px; height:35px}
+    100% { left: 910px; top: 1100px;width:30px; height:30px}
+}
+
